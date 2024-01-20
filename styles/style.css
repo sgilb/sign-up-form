@@ -11,7 +11,7 @@
 :root {
   --light-blue: #A6CFFB;
   --blue: #3E5979;
-  --dark-blue: #20365B;
+  --dark-blue: #2e4258;
   --off-white: #EBDFE3;
 }
 
@@ -25,7 +25,11 @@ html, body, #container {
 }
 
 a {
-  color: var(--off-white);
+  color: pink;
+}
+
+.highlight {
+  color: pink;
 }
 
 #container {
@@ -55,7 +59,7 @@ a {
 
 #wordmark {
   font-family: 'pxlxxl', Arial, Helvetica, sans-serif;
-  font-size: 6em;
+  font-size: 6rem;
   color: var(--off-white);
   line-height: 0.9;
 }
@@ -69,5 +73,57 @@ a {
 #form-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex-grow: 1;
+  padding: 20px;
+  background-color: var(--dark-blue);
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-self: center;
+  padding: 20px;
+  margin: 0;
+  color:whitesmoke;
+  max-width: 500px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+
+.input-container label {
+  display: block;
+  font-size: 0.9rem;
+  color: lightgray;
+  margin-bottom: 5px;
+}
+
+.input-container input {
+  background-color: var(--dark-blue);
+  border: none;
+  border-bottom: solid 1px var(--off-white);
+}
+
+input {
+  color: white;
+}
+
+#button-container p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+#button-container button {
+  background-color: pink;
+  color: var(--dark-blue);
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
 }
