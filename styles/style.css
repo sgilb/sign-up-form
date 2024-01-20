@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@font-face {
+  font-family: 'pxlxxl';
+  src: url('../assets/fonts/pxlxxl.regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/pxlxxl.regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --light-blue: #A6CFFB;
+  --blue: #3E5979;
+  --dark-blue: #20365B;
+  --off-white: #EBDFE3;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+#image-container {
+  background-image: url("/assets/images/city.gif");
+}
+
+#wordmark {
+  font-family: 'pxlxxl', Arial, Helvetica, sans-serif;
+  font-size: 8em;
+  color: var(--off-white);
+}
+
+#logo {
+  width: 80px;
+  height: auto;
+}
