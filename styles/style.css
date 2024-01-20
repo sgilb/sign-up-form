@@ -13,6 +13,8 @@
   --blue: #3E5979;
   --dark-blue: #2e4258;
   --off-white: #EBDFE3;
+  --field: rgb(180, 180, 180);
+  --invalid: #D6688D;
 }
 
 * {
@@ -107,8 +109,12 @@ form {
 .input-container label {
   display: block;
   font-size: 0.9rem;
-  color: lightgray;
-  margin-bottom: 5px;
+  color: var(--field);
+  margin-bottom: 10px;
+}
+
+.input-container label > span {
+  color: rgb(135, 135, 135);
 }
 
 .input-container input {
@@ -118,7 +124,30 @@ form {
 }
 
 input {
-  color: white;
+  color: whitesmoke;
+  height: 25px;
+}
+
+input:focus {
+  border: solid 1px var(--field);
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+input:hover {
+  border-bottom: solid 2px var(--off-white);
+}
+
+input:user-invalid {
+  border-bottom: solid 2px var(--invalid);
+}
+
+label:has(+ input:focus) {
+  color: var(--off-white);
+}
+
+label:has(+ input:not(:focus):user-invalid) {
+  color: var(--invalid);
 }
 
 #button-container p {
@@ -132,4 +161,13 @@ input {
   border: none;
   border-radius: 3px;
   padding: 5px 10px;
+  width: 150px;
+  height: 40px;
+}
+
+#password-error {
+  margin: 15px 0 0 0;
+  color: var(--invalid);
+  font-size: 0.9rem;
+  visibility: hidden;
 }

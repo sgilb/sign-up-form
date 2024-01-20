@@ -21,36 +21,37 @@
           target="_blank">Wanella</a></p>
     </div>
     <div id="form-container">
-      <form>
+      <form id="signup">
         <h1>Get your guide to <br><span class="highlight">the best city on Earth</span></h1>
         <div class="input-row">
           <div class="input-container">
             <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name">
+            <input type="text" name="first-name" id="first-name" required>
           </div>
           <div class="input-container">
             <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name">
+            <input type="text" name="last-name" id="last-name" required>
           </div>
         </div>
         <div class="input-row">
           <div class="input-container">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
           </div>
           <div class="input-container">
-            <label for="phone">Phone Number</label>
+            <label for="phone">Phone Number <span>(Optional)</span></label>
             <input type="tel" name="phone" id="phone">
           </div>
         </div>
         <div class="input-row">
           <div class="input-container">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" required>
           </div>
           <div class="input-container">
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" name="confirm-password" id="confirm-password">
+            <label for="password-confirm">Confirm Password</label>
+            <input type="password" name="password-confirm" id="password-confirm" required>
+            <div id="password-error">*Password did not match</div>
           </div>
         </div>
         <div id="button-container">
