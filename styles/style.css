@@ -28,6 +28,11 @@ a {
   color: pink;
 }
 
+h1 {
+  font-size: 2.5rem;
+  padding-top: 50px;
+}
+
 .highlight {
   color: pink;
 }
@@ -47,6 +52,7 @@ a {
   align-items: center;
   flex-grow: 2;
   max-width: 600px;
+  background-size: cover;
 }
 
 #banner {
@@ -74,18 +80,18 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   flex-grow: 1;
   padding: 20px;
   background-color: var(--dark-blue);
-  height: 100%;
+  overflow: auto;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  align-self: center;
-  padding: 20px;
+  padding: 30px;
   margin: 0;
   color:whitesmoke;
   max-width: 500px;
