@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'pxlxxl';
-  src: url('../assets/fonts/pxlxxl.regular-webfont.woff2') format('woff2'),
-       url('../assets/fonts/pxlxxl.regular-webfont.woff') format('woff');
+  src:url('../assets/fonts/pxlxxl.regular-webfont.woff2') format('woff2'),
+      url('../assets/fonts/pxlxxl.regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,19 +17,57 @@
 
 * {
   font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+html, body, #container {
+  height: 100%;
+}
+
+a {
+  color: var(--off-white);
+}
+
+#container {
+  display: flex;
+  justify-content:flex-start;
 }
 
 #image-container {
   background-image: url("/assets/images/city.gif");
+  background-position: 50% 39%;
+  color: var(--off-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 2;
+  max-width: 600px;
+}
+
+#banner {
+  padding: 10px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 12%;
 }
 
 #wordmark {
   font-family: 'pxlxxl', Arial, Helvetica, sans-serif;
-  font-size: 8em;
+  font-size: 6em;
   color: var(--off-white);
+  line-height: 0.9;
 }
 
 #logo {
-  width: 80px;
+  width: 70px;
   height: auto;
+  margin-right: 24px;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
