@@ -38,6 +38,12 @@ h1 {
   padding-top: 50px;
 }
 
+@media only screen and (max-width: 888px) {
+  h1 {
+    padding-top: 160px;
+  }
+}
+
 .highlight {
   color: pink;
 }
