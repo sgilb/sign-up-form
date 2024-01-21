@@ -48,7 +48,7 @@ h1 {
 }
 
 #image-container {
-  background-image: url("/assets/images/city.gif");
+  background-image: url("../assets/images/city.gif");
   background-position: 50% 39%;
   color: var(--off-white);
   display: flex;
